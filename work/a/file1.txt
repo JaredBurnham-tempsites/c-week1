@@ -1,0 +1,1 @@
+command used to make multiple directories mkdir -p work/{a,b,c}
