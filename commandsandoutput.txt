@@ -1,0 +1,12 @@
+jared@jared-lubuntu:~/Projects/c-week1$ gcc -Wall -Wextra -g -c src/util.c -o src/util.o
+jared@jared-lubuntu:~/Projects/c-week1$ gcc -Wall -Wextra -g -c src/main.c -o src/main.o
+jared@jared-lubuntu:~/Projects/c-week1$ gcc -g src/main.o src/util.o - bin/hello
+gcc: error: -E or -x required when input is from standard input
+jared@jared-lubuntu:~/Projects/c-week1$ gcc -g src/main.o src/util.o -o bin/hello
+/usr/bin/ld: cannot open output file bin/hello: No such file or directory
+collect2: error: ld returned 1 exit status
+jared@jared-lubuntu:~/Projects/c-week1$ mkdir bin
+jared@jared-lubuntu:~/Projects/c-week1$ gcc -g src/main.o src/util.o -o bin/hello
+jared@jared-lubuntu:~/Projects/c-week1$ ./bin/hello 
+hello, linux!
+util says hi
