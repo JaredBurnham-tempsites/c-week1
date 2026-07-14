@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main(){
+	printf("ima escape some characters XD \\ \t \n \"");
+	return 0;
+}
