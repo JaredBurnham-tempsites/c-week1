@@ -14,4 +14,8 @@ int main(){
 	}
 
 	(c >= a + b) ? printf("%d is equal to or larger than %d and %d combined\n", c, a, b): printf("my math is wrong");
+
+	if(a < b && (c > b || b < a)){
+		printf("you've done hacked the mainframe ahhhh");
+	}
 }
