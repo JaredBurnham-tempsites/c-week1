@@ -24,5 +24,20 @@ int main(){
 	printf("%d\n", allTheNumbers[i]);
 	}
 	// toodoo multidimensional array maybe even 5 levels deep delving into the multiverse with that one eh
+	int threeD[][2][3] = {
+			{
+				{1,2,3},{21,22,23}
+			},{
+				{4,5,6},{41,42,43}
+			}
+			};
+	int j,k;
+	for(i = 0; i< 2;i++){
+		for(j = 0; j < 2; j++){
+			for(k = 0; k < 3; k++){
+				printf("%d\n",threeD[i][j][k]);
+			}
+		}
+	}
 
 }
