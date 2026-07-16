@@ -8,10 +8,10 @@ int gotdata(int num);
 int main(){
 	myfunction();
 
-	argumentative("hello");
+	argumentative("hello\n");
 	int b[2] = {1,2};
 	int a = ineeddata(b);
-	printf("data receied %d",gotdata(a));
+	printf("data receied %d\n",gotdata(a));
 	return 0;
 }
 
