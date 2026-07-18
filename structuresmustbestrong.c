@@ -9,10 +9,27 @@ void printer(struct stronk *s){
 	printf("heres my stronk stats %d %c\n",s->sint, s->schar);
 }
 
+union dontgetmarried{
+ int wastedyears;
+
+ char badvibes;
+
+ char keepmynameouturmouth[30];
+};
+
 int main(){
+	union dontgetmarried ul;
+
+	ul.wastedyears = 1000;
+
+	ul.badvibes = 'y';
+
+	printf("%d %c",ul.wastedyears, ul.badvibes);
+
 	struct stronk s1;
 	s1.sint = 275056;
 	s1.schar = 'S';
+
 
 	struct stronk s2;
 	s2.sint = 1;
